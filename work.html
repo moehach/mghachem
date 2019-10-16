@@ -13,16 +13,21 @@
   <link href="simple-grid.css" rel="stylesheet">
   <link href="styles4.css" rel="stylesheet">
   <link rel="icon" href="/favicon.ico">
+  <script src="jquery-3.4.1.min.js"></script>
+
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143942963-2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
 
-    gtag('config', 'UA-143942963-2');
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-143942963-2');
   </script>
+
+
 
 </head>
 
@@ -44,134 +49,161 @@
 <body>
 
   <main class="mycontainer">
+
     <div class="row">
       <div class="col-12">
         <h1>Work</h1>
-              </div>
+
+      </div>
     </div>
 
-    <!--Row 1-->
+    <div class="row">
+      <div class="col-12">
+        <h4>Filter By Category</h4>
+        <button class="filter filterbutton filteractive" data-category="all">Show All</button>
+        <button class="filter filterbutton" data-category="uiux">UI/UX</button>
+        <button class="filter filterbutton" data-category="brand">Branding</button>
+        <button class="filter filterbutton" data-category="arch">Architecture</button>
+        <button class="filter filterbutton" data-category="art">Art</button>
+      </div>
+    </div>
 
     <div class="row">
-      <!--Calibri-->
-      <div class="col-6">`
-        <div class="img-container">
 
-          <a href="calibri.html">
-            <img class="img-col" src="media\work\1.jpg" alt="Calibri Re-Branding Project. Architecture, Interior, Graphic Design, Branding">
-          <div class="img-text-block">
-            <p style="text-transform:lowercase;"><strong>Calibri:</strong> re-Branding</p>
+      <!--Calibri-->
+      <div class="col-4 portfolio-item" data-image-filter="gallery" data-filter="arch brand">
+        <a href="calibri.html">
+          <div class="filterbox">
+            <img class="img-col" src="media\work\1.jpg" alt="Calibri Re-Branding Project. Architecture, Interior, Graphic Design, Branding"/>
+            <h3 style="text-align:center;">Calibri</h3>
+            <p class="workcap">Design Gestalt: Architecture to Branding</p>
           </div>
         </a>
-        </div>
       </div>
 
       <!--BETA-->
-      <div class="col-6">`
-        <div class="img-container">
-
-          <a href="beta.html">
-            <img class="img-col" src="media\work\5.jpg" alt="BETA UX Design Proposal. UX/UI Design">
-          <div class="img-text-block-2">
-              <p style="text-transform:lowercase;"><strong>BETA:</strong> UI/UX</p>
+      <div class="col-4 portfolio-item" data-image-filter="gallery" data-filter="uiux">
+        <a href="beta.html">
+          <div class="filterbox">
+            <img class="img-col" src="media\work\5.jpg" alt="BETA UX Design Proposal. UX/UI Design"/>
+            <h3 style="text-align:center;">B.E.T.A</h3>
+            <p class="workcap">Pet Adoption UI/UX Research</p>
           </div>
         </a>
-        </div>
       </div>
-    </div>
 
-    <!--Row 2-->
-    <div class="row">
-      <!---Mentality-->
-      <div class="col-6">`
-        <div class="img-container">
-
-          <a href="mentality.html">
-            <img class="img-col" src="media\work\7.jpg" alt="Mentality: A Mental Health Awareness UI//UX Case Study">
-          <div class="img-text-block">
-            <p style="text-transform:lowercase;"><strong>Mentality:</strong> UI/UX</p>
+      <!--Mentality-->
+      <div class="col-4 portfolio-item" data-image-filter="gallery" data-filter="uiux">
+        <a href="mentality.html">
+          <div class="filterbox">
+            <img class="img-col" src="media\work\7.jpg" alt="Mentality: A Mental Health Awareness UI//UX Case Study"/>
+            <h3 style="text-align:center;">Mentality</h3>
+            <p class="workcap">Mental Health Web App UI/UX</p>
           </div>
         </a>
-        </div>
       </div>
 
       <!--Tuna String-->
-      <div class="col-6">`
-        <div class="img-container">
-
-          <a href="tunastring.html">
-            <img class="img-col" src="media\work\8.jpg" alt="TunaString: A Guitar Tuner UI/UX project">
-          <div class="img-text-block-2">
-              <p style="text-transform:lowercase;"><strong>Tuna String:</strong> UI/UX</p>
+      <div class="col-4 portfolio-item" data-image-filter="gallery" data-filter="uiux">
+        <a href="tunastring.html">
+          <div class="filterbox">
+            <img class="img-col" src="media\work\8.jpg" alt="TunaString: A Guitar Tuner UI/UX project"/>
+            <h3 style="text-align:center;">Tuna String</h3>
+            <p class="workcap">Guitar Tuner UI/UX</p>
           </div>
         </a>
-        </div>
       </div>
+
+      <!--Up-->
+      <div class="col-4 portfolio-item" data-image-filter="gallery" data-filter="arch">
+        <a href="up.html">
+          <div class="filterbox">
+            <img class="img-col" src="media\work\3.jpg" alt="Up: Water Tower Project. Architecture"/>
+            <h3 style="text-align:center;">Up</h3>
+            <p class="workcap">Architecture and the Suspension of Disbelief</p>
+          </div>
+        </a>
+      </div>
+
+      <!--Modules-->
+      <div class="col-4 portfolio-item" data-image-filter="gallery" data-filter="arch">
+        <a href="modules.html">
+          <div class="filterbox">
+            <img class="img-col" src="media\work\4.jpg" alt="Modules Digital Research Project. Architecture and Fabrication"/>
+            <h3 style="text-align:center;">Modules</h3>
+            <p class="workcap">Digital Fabrication Architectural Research</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Social Housing-->
+      <div class="col-4 portfolio-item" data-image-filter="gallery" data-filter="arch">
+        <a href="socialhousing.html">
+          <div class="filterbox">
+            <img class="img-col" src="media\work\2.jpg" alt=""/>
+            <h3 style="text-align:center;">Social</h3>
+            <p class="workcap">Architecture meets Social Experiments</p>
+          </div>
+        </a>
+      </div>
+
+      <!--Spectrum-->
+      <div class="col-4 portfolio-item" data-image-filter="gallery" data-filter="art">
+        <a href="spectrum.html">
+          <div class="filterbox">
+            <img class="img-col" src="media\work\6.jpg" alt=""/>
+            <h3 style="text-align:center;">Spectrum</h3>
+            <p class="workcap">Arts and Illustrations</p>
+          </div>
+        </a>
+      </div>
+
+
+
     </div>
-
-    <!--Row 3-->
-
-        <div class="row">
-
-          <!--Up-->
-          <div class="col-6">`
-            <div class="img-container">
-              <a href="up.html">
-              <img class="img-col" src="media\work\3.jpg" alt="Up: Water Tower Project. Architecture">
-              <div class="img-text-block">
-                <p style="text-transform:lowercase;"><strong>Up:</strong> Architecture</p>
-              </div>
-            </a>
-            </div>
-          </div>
-
-          <!--Modularis-->
-          <div class="col-6">`
-            <div class="img-container">
-              <a href="modules.html">
-              <img class="img-col" src="media\work\4.jpg" alt="Modularis Digital Research Project. Architecture and Fabrication.">
-              <div class="img-text-block-2">
-                  <p style="text-transform:lowercase;"><strong>Modules:</strong> Fabrication</p>
-              </div>
-            </a>
-            </div>
-          </div>
-        </div>
-
-
-    <!--Row 4-->
-
-        <div class="row">
-          <!--Social-->
-          <div class="col-6">`
-            <div class="img-container">
-
-              <a href="socialhousing.html">
-                <img class="img-col" src="media\work\2.jpg" alt="Social Housing Project. Architecture.">
-              <div class="img-text-block">
-                <p style="text-transform:lowercase;"><strong>Social:</strong> Architecture</p>
-              </div>
-            </a>
-            </div>
-          </div>
-
-          <!--BETA-->
-          <div class="col-6">`
-            <div class="img-container">
-
-              <a href="spectrum.html">
-                <img class="img-col" src="media\work\6.jpg" alt="Spectrum: Selection of Artwork and Illustrations">
-              <div class="img-text-block-2">
-                  <p style="text-transform:lowercase;"><strong>Spectrum:</strong> Art</p>
-              </div>
-            </a>
-            </div>
-          </div>
-        </div>
-
-
   </main>
+
+  <script type="text/javascript">
+  // If a filter is activated, with click event
+  $(".filter").on("click", function () {
+
+    // if we click the active tab nothing happens
+    var $this = $(this);
+    //set an active filter
+
+    if ( !$this.hasClass("filteractive") ) {
+      $(".filter").removeClass("filteractive");
+      $this.addClass("filteractive");
+
+
+      // Here we get the data-category value from selected button, and set it as a filter
+      var $filter = $this.data("category");
+
+      // if we select show all, return to initial settings and show all
+
+      $filter == 'all' ?
+      $(".portfolio-item")
+      .attr("data-image-filter", "gallery")
+      .not(":visible")
+      .fadeIn()
+      : // or otherwise
+      $(".portfolio-item")
+      .fadeOut(0)
+      .filter(function () {
+        // Set data-filter value to the data-category value of selected filter
+        return ($(this).data("filter").indexOf($filter) > -1);
+
+      })
+      // Set data-image-filter, and filter elements
+      .attr("data-image-filter", $filter)
+      .fadeIn(1000);
+    }
+  });
+
+  </script>
+
 </body>
+
 
 
 
