@@ -849,10 +849,74 @@ button.cta1
   font-size: 1rem;
   font-family: "Nunito Sans";
   margin-top: 0.2375rem;
-  margin-bottom:
+  margin-bottom:;
   margin-left: auto;
   margin-right: auto;
 }
+
+
+/*Gallery Button Filter*/
+
+/* Create three equal filtercolumns that floats next to each other */
+
+
+
+.filtercolumn {
+  float:left;
+  display: none;
+
+}
+
+/* The "show" class is added to the filtered elements */
+.filtershow {
+  display: block;
+}
+
+
+/* Style the buttons */
+button.filtergallerybutton
+{
+  background-color:white;
+  height: 48px;
+  border: solid;
+  border-width: 0.0625rem;
+  border-radius: 1rem;
+  color: black;
+  padding: 0rem 18px;
+  text-align: center;
+  text-transform: lowercase;
+  display: inline-block;
+  font-size: 12px;
+  font-family: "Nunito Sans";
+  margin-top: 0.9375rem;
+  margin-left: auto;
+  margin-right: auto;
+
+      -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+
+}
+
+
+/* Add a grey background color on mouse-over */
+button.filtergallerybutton:hover {
+  font-weight: 700;
+  border-width: 0.1rem;
+  color: black;
+}
+
+/* Add a dark background color to the active button */
+.filtergallerybutton.filteractive {
+  font-weight: 700;
+  border-width: 0.1rem;
+  color: black;
+  }
+
+
+
+/*Filter Gallery ends*/
+
+
 
 .myfooter2 p{
   font-size: 0.75rem;
