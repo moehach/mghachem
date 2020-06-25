@@ -34,7 +34,6 @@ module.exports = {
         siteUrl: config.siteUrl,
     },
 	
-	pathPrefix: `/blog`,
 
     plugins: [
         /**
