@@ -31,7 +31,7 @@ try {
 */
 module.exports = {
     siteMetadata: {
-        siteUrl: config.siteUrl,
+        siteUrl: `https://mghachem.com/blog` ,
     },
 	
 	pathPrefix: `/blog`,
