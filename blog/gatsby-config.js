@@ -33,6 +33,9 @@ module.exports = {
     siteMetadata: {
         siteUrl: config.siteUrl,
     },
+	
+	pathPrefix: `/blog`,
+
     plugins: [
         /**
          *  Content Plugins
