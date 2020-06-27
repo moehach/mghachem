@@ -1,6 +1,0 @@
-[build]
-  command = "gatsby build"
-  publish = "blog/"
-
-[template]
-  incoming-hooks = ["Ghost"]
